@@ -1,0 +1,647 @@
+:root {
+    --main: rgb(15, 47, 33);
+    --maint: rgba(15, 47, 33, 0.682);
+    --mainv: rgb(76, 42, 133);
+    --mainvt: rgba(75, 42, 133, 0.455);
+    --sec: rgb(0, 79, 45);
+    --sect: rgba(0, 79, 45, 0.646);
+    --secv: #b388eb;
+    --secvt: #b388eb5b;
+    --acc: rgb(138, 170, 121);
+    --acct: rgba(138, 170, 121, 0.644);
+    --accv: rgb(128, 147, 241);
+    --accv: rgba(128, 147, 241, 0.496);
+    --light: rgb(238, 255, 247);
+    --lightt: rgba(238, 255, 247, 0.503);
+    --dark: rgb(20, 27, 24);
+    --darkt: rgba(20, 27, 24, 0.638);
+}
+
+h1,h5,h4,h3,h2,p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--acc);
+}
+
+.violet-text{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--accv)
+}
+
+h2{
+    font-weight: 600;
+}
+
+p,label{
+    color: var(--light);
+}
+
+.textdarkw{
+    text-shadow: 0px 0px 10px var(--mainv);
+}
+.textlightw{
+    text-shadow: 0px 0px 10px var(--secv);
+}
+
+a:link {
+    color: var(--acc);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--acc);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  .navbar a:hover {
+    color: var(--acc);
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  .navbar a:active {
+    color: var(--light);
+    text-decoration: none;
+  }
+  
+
+/* 
+font-family: 'Montserrat', sans-serif;
+*/
+
+body{
+    margin: 0px;
+    background-attachment: fixed;
+    background-image:linear-gradient(to bottom, var(--mainvt), var(--lightt)), url(/public/media/sfondoh.jpg);    
+}
+
+/* STILI ELEMENTI */
+.mylinks{
+    text-decoration-line: none;
+}
+
+.mylinks:hover{
+    text-shadow: 0px 0px 10px var(--accv);
+}
+
+.mylinks:visited {
+    color: var(--acc);
+    text-decoration: none;
+  }
+  
+.mylinks:hover {
+    color: var(--acc);
+    text-decoration: none;
+  }
+  
+.mylinks:active {
+    color: var(--light);
+    text-decoration: none;
+  }
+  
+
+/* STILI NAVBAR */
+.navbar-custom{
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background-color: var(--darkt);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+.mysearchbar{
+    height: 35px;
+    margin-inline: 10px;
+}
+
+.myinputsearch{
+    background-color: var(--lightt);
+    border-color: var(--sec);
+    color: var(--light);
+}
+
+.riganavbar{
+  height:  50px;
+}
+
+/* logo */
+.divlogo{
+    width: 140px;
+  }
+  
+.imglogo{
+    width: 100%;
+  }
+
+
+
+.linkbenvenuto{
+    color: var(--acc);
+}
+
+.linkbenvenuto:hover{
+    color: var(--acc);
+    text-shadow: 0px 0px 10px var(--lightt);
+}
+/* --------------------HOMEPAGE------------------------ */
+
+.containerseznumeri{
+    height: 100%;
+}
+
+.mycard{
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 10px var(--lightt);
+    background-color: var(--dark);
+    height: 470px;
+}
+
+.mycard:hover{
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 10px var(--lightt);
+    background-color: var(--dark);
+    height: 470px;
+}
+
+.cardimg{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cardtitle{
+    height: fit-content;
+    max-height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardprice{
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.cardcategory{
+    padding-inline: 10px;
+    position: absolute;
+    bottom: 0%;
+    background-color: var(--darkt);
+    border-radius: 0px 20px 0px 0px;    
+}
+
+.carddescription{
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carddate{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding-inline: 3px;
+    height: 25px;
+    border-radius: 20px 0px 20px 0px;
+    background-color: var(--acct);
+}
+
+.mybtn{
+    background-color: var(--darkt);
+    color: var(--acc);
+    border-color: var(--acc);
+    border-radius: 5px 5px 5px 5px;
+    width: 160px;
+    height: 40px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    box-shadow: 0px 0px 10px;
+    font-style: italic;
+  }
+
+.mybtn:hover {
+    /* Stili quando il cursore si posiziona sopra il bottone */
+    background-color: var(--acc);
+    color: var(--dark);
+    border-color: var(--dark);
+    box-shadow: 0px 0px 10px var(--acc);
+
+  }
+.show{
+    background-color: var(--darkt);
+}
+/* commentato perchè rompeva il layout da mobile */
+/* .mydrop{
+    margin-left: -200px;
+  } */
+
+/**effetto hover dropdown*/
+.dropdown-item:hover{
+    background-color: var(--sec);
+        cursor: pointer;
+}
+.myinput {
+    background-color: var(--lightt);
+}
+
+.myinput:hover {
+    /* Stili quando il cursore si posiziona sopra il bottone */
+    background-color: var(--acc);
+    color: var(--dark);
+    border-color: var(--dark);
+    box-shadow: 0px 0px 10px var(--acc);
+
+  }
+
+  .myinput:focus {
+    /* Stili quando il cursore si posiziona sopra il bottone */
+    background-color: var(--lightt);
+    color: var(--dark);
+    border-color: var(--dark);
+    box-shadow: 0px 0px 10px var(--acc);
+
+  }
+  .mybtn:focus {
+    /* Stili quando il cursore si posiziona sopra il bottone */
+    background-color: var(--lightt);
+    color: var(--dark);
+    border-color: var(--dark);
+    box-shadow: 0px 0px 10px var(--acc);
+
+  }
+
+.myheader {
+    margin-top: 5rem;
+    /* background-color: var(--darkt); */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/public/media/sfondoh.jpg);
+    border-radius: 20px 20px 20px 20px;
+    min-height: 10rem;
+
+}
+
+.mymotto {
+    margin-top: 7px;
+    /* background-color: var(--darkt); */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/public/media/sfondoh.jpg);
+    border-radius: 20px 20px 20px 20px;
+    height: 5rem;
+
+}
+
+
+.mysezione11{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--darkt);
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.contsx {
+    height: 100%;
+}
+
+.colsezsx {
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+    height: 80px;
+    max-height: 80px;
+    overflow: hidden;
+    background-color: var(--darkt);
+    padding: 1rem;
+}
+
+.contentcolsx{
+    width: 100%;
+    height: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* .mytext{
+    text-overflow: ellipsis;
+    text-overflow: " [..]";
+    direction: ltr;
+} */
+
+.coldetsx{
+    border-radius: 20px 20px 20px 20px;
+        
+}
+
+.coldetdx{
+    border-radius: 20px 20px 20px 20px;
+}
+
+.coldetli{
+    border-radius: 20px 20px 20px 20px;
+    padding: 1rem; 
+    background-color: var(--darkt); 
+    box-shadow: 8px 10px 10px var(--dark);
+    margin-top: 1rem;  
+    margin-bottom: 1rem;
+}
+
+.coldetlibtn{
+    border-radius: 20px 20px 20px 20px;
+    padding: 1rem; 
+    background-color: var(--darkt); 
+    box-shadow: 8px 10px 10px var(--dark);
+    margin-top: 1rem;  
+    margin-bottom: 1rem;
+}
+
+
+.coldetlibtn:hover{
+    border-radius: 20px 20px 20px 20px;
+    padding: 1rem; 
+    background-color: var(--darkt); 
+    box-shadow: 8px 10px 10px var(--light);
+    margin-top: 1rem;  
+    margin-bottom: 1rem;
+}
+
+.imgdet{
+    border-radius: 30px 30px 30px 30px;
+}
+
+.coldetsxd{
+    border-radius: 20px 20px 20px 20px;
+    padding: 1rem; 
+    background-color: var(--darkt); 
+    box-shadow: 8px 10px 10px var(--dark);     
+}
+
+.coldetdxd{
+    border-radius: 20px 20px 20px 20px;
+    padding: 2rem;
+    background-color: var(--darkt);
+    box-shadow: 8px 10px 10px var(--dark);
+}
+
+/* .coldetsxd:hover{
+    border-radius: 20px 20px 20px 20px;
+    padding: 1rem; 
+    background-color: var(--lightt);
+    box-shadow: 8px 10px 10px var(--light);      
+}
+
+.coldetdxd:hover {
+    border-radius: 20px 20px 20px 20px;
+    padding: 2rem;
+    background-color: var(--lightt);
+    box-shadow: 8px 10px 10px var(--light);
+} */
+
+ 
+.myformdiv{
+    margin-top: 2rem;
+}
+
+.mysection{
+    background-color: var(--darkt);
+    margin-bottom: 1rem;
+    border-radius: 30px 30px 30px 30px;
+    padding: 1rem;
+}
+
+.mysectionx{
+    background-color: var(--lightt);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.mysection12{
+    background-color: var(--darkt);
+    border-radius: 30px 0px 0px 30px;
+}
+
+.mysection13{
+    background-color: var(--darkt);
+    border-radius: 0px 0px 30px 30px;
+    height: 5rem;
+}
+ 
+
+/* -----------------FOOTER-------------------- */
+
+.myfooter{
+    background-color: var(--darkt);
+    margin-top: 50px;
+}
+
+.myfootercolprinc{
+    padding: 1rem;    
+}
+
+.myfootercol{
+    color: var(--light);
+}
+.dec{
+    font-size: small;
+    font-weight: 300;
+}
+.int{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* MODALE */
+.modal {
+    display: none; /* Nasconde la modale per default */
+    position: fixed; /* Posizione fissa */
+    z-index: 1; /* Imposta la modale sopra gli altri elementi */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permette lo scrolling se il contenuto è più grande della modale */
+    background-color: rgba(0, 0, 0, 0.4); /* Sfondo semitrasparente */
+  }
+  
+  .modal-content {
+    background-color: var(--darkt);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--dark);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: var(--acc);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--light);
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* style per nuovo su nuovi articoli */
+.newArticle::after{
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    content: "NEW";
+    bottom: 430px;
+    right: -30px;
+    color: var(--secv);
+    transform: rotateZ(30deg);
+    text-shadow: 3px 3px 0px var(--sec);
+}
+
+
+.colorAcc{
+    color: var(--acc);
+}
+
+/* icona hamburger navbar mobile */
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28138, 170, 121, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");;
+}
+/* Colore parte utente */
+.show{
+    color: var(--acct) !important;
+}
+
+/**IMMAGINE ANTEPRIMA*/
+.img-preview{
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 150px;
+}
+
+
+
+.swiper {
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+  }
+.swiper-slide
+{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.mySwiper2 {
+    height: fit-content;
+    padding: 50px;
+  }
+
+.swiper2{
+    width: fit-content;
+    height: fit-content;
+}
+.swiper-wrapper2{
+    width: fit-content;
+}
+.swiper-slide2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;    
+}
+#coloraAcc{
+    color: var(--acc) !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--acc) !important;
+}
+
+.webgl{
+    background-color: transparent;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+    /* pallino form viola */
+.form-check-input:checked{
+    background-color: var(--secv);
+    border-color: var(--secv);
+
+    /* Se vuoi il pallino tutto viola, se no cancellalo */
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%b388eb'/%3e%3c/svg%3e"); */
+}
+/* Per togliere il cerchio blu */
+.form-check-input:focus{
+    box-shadow:none;
+}
+.hContent{
+    height: fit-content;
+    min-height: 500px;
+    width: 50vh;
+}
+.wMe{
+    display: inline-block;
+    width: 90px;
+}
+.borderL{
+    border-left: 2px solid var(--acc);
+}
+.bgMain{
+    background-color: var(--dark);
+}
+.vh-60{
+    height: 58vh;
+}
+
+.topprodc{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* MEDIA QUERY PER I DISPOSITIVI MEDIO-GRANDI */
+@media (min-width: 1500px) and (max-width: 2000px) {
+    /* Le regole CSS specifiche per gli schermi md vanno qui */
+    .mycard{
+        width: 280px;
+    }
+    .coldetli{
+        width: 600px;
+    }
+    .mynumbers{
+        height: 7rem;
+    }
+    
+}
+@media (min-width: 600px) and (max-width: 1281px){
+
+    .imgBox{
+        max-width: 300px;
+    }
+}
+@media (min-width: 200px) and (max-width: 600px){
+    .newArticle::after{
+        font-size: 2rem;
+        font-weight: 900;
+        position: absolute;
+        content: "NEW";
+        bottom: 430px;
+        right: 0px;
+        color: var(--secv);
+        transform: rotateZ(30deg);
+        text-shadow: 3px 3px 0px var(--sec);
+    }
+
+        .mysection12 {
+            background-color: var(--darkt);
+            border-radius: 30px 30px 30px 30px;
+        }
+}
